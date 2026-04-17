@@ -1,0 +1,15 @@
+{
+    "experiment_name": "exp_01",
+    "log_path": "/home/NAS/USERS/Antria/InsectAI/ct_image-insect-classifier/experiments/exp_01",
+    "experiment_description": "This is the first experiment",
+    "data_path": "/home//NAS/USERS/Antria/InsectAI/ct_image-insect-classifier/src/datafeeder/dataset",
+    "seed_flag":true,
+    "training":{
+        "loss":"BCEWithLogitsLoss",
+        "lr":0.001,
+        "epochs":500,
+        "save_every":25,
+        "batch_size": 16,
+        "image_size": 512
+    }
+}

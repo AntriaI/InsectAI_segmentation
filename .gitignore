@@ -1,0 +1,9 @@
+#fodler
+*/__pycache__/
+data/
+*/.vscode/
+*/tensorboard/
+
+*.pth
+*.pt
+experiments/*/models/*.pth
