@@ -160,6 +160,7 @@ def get_dataloader(config):
 
     print(f"Training set size: {len(train_data)}, Validation set size: {len(val_data)}")
 
+    # transform = True only for training data (augment only training data)
     train_dataset = InsectSegmentationDataset(
         train_data,
         transform=True,
