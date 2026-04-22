@@ -1,11 +1,12 @@
 {
     "experiment_name": "exp_01",
-    "log_path": "/home/NAS/USERS/Antria/InsectAI/ct_image-insect-classifier/experiments/exp_01",
+    "log_path": "/home/DATA/InsectAI_segmentation/experiments/exp_01",
     "experiment_description": "This is the first experiment",
-    "data_path": "/home//NAS/USERS/Antria/InsectAI/ct_image-insect-classifier/src/datafeeder/dataset",
+    "image_dir": "/home/NAS/USERS/Antria/InsectAI/annotated_data/images",
+    "mask_dir": "/home/NAS/USERS/Antria/InsectAI/annotated_data/masks",
     "seed_flag":true,
     "training":{
-        "loss":"BCEWithLogitsLoss",
+        "loss":"BCEDiceLoss",
         "lr":0.001,
         "epochs":500,
         "save_every":25,

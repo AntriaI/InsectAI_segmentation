@@ -1,4 +1,3 @@
-from .model import BinaryClassifier
+from .model import UNetResNet34
 
-
-__all__ = ['BinaryClassifier']
+__all__ = ['UNetResNet34']

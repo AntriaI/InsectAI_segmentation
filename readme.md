@@ -1,6 +1,6 @@
 # Insect Binary Classification
 
-This project implements a **binary image classification pipeline**
+This project implements a **Insect segmentation pipeline**
 
 ---
 
@@ -30,10 +30,10 @@ Organize your dataset like this:
 
 ```
 dataset/
- ├── insect/
+ ├── images/
  │    ├── img1.jpg
  │    ├── img2.jpg
- ├── no-insect/
+ ├── masks/
       ├── img3.jpg
       ├── img4.jpg
 ```
@@ -50,7 +50,7 @@ Edit `config.json`:
   "batch_size": 16,
   "seed_flag": true,
   "training": {
-    "loss": "BCEWithLogitsLoss",
+    "loss": "BCEDiceLoss",
     "lr": 0.0001,
     "epochs": 100,
     "save_every": 25
@@ -60,8 +60,8 @@ Edit `config.json`:
 
 Supported losses:
 
-* `"BCEWithLogitsLoss"`
-* `"FocalLoss"`
+* `"DiceLoss"`
+* `"BCEDiceLoss"`
 
 ---
 

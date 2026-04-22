@@ -1,4 +1,3 @@
 from .train import train
 
-
-__all__ = ["train", "get_loss"]
+__all__ = ["train"]
